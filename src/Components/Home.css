@@ -1,0 +1,30 @@
+.explore-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.explore-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #2ecc71;
+  transition: left 1s ease;
+}
+
+.explore-button:hover::before {
+  left: 0;
+  color: white;
+}
+
+.btn-text {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 735px) {
+  .res {
+    height: 200px !important; /* Important to override other classes */
+  }
+}
